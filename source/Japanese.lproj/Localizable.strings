@@ -1,0 +1,41 @@
+/* comment1 */
+"elase_title1" = "全消し";
+
+/* comment2 */
+"elase_title2" = "指で消す";
+
+/* Undo */
+"elase_title3" = "ひとつ前に戻る";
+
+/* comment3 */
+"save_title1" = "黒板の絵を保存しますか？";
+
+/* comment4 */
+"save_title2" = "キャンセル";
+
+/* comment5 */
+"save_title3" = "保存する";
+
+/* comment6 */
+"save_title4" = "保存完了";
+
+/* comment7 */
+"save_title5" = "アルバムに画像を保存しました。";
+
+/* comment8 */
+"save_title6" = "接続失敗";
+
+/* comment9 */
+"save_title7" = "しばらく経ってから接続し直してください。";
+
+/* userID */
+"Twitter_title1" = "TwitterID";
+
+/* Password */
+"Twitter_title2" = "パスワード";
+
+/* Message */
+"Twitter_title3" = "メッセージ（任意）";
+
+/* send */
+"Twitter_title4" = "TwitPicにこの画像を投稿";

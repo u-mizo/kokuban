@@ -1,0 +1,41 @@
+/* comment1 */
+"elase_title1" = "Erase All";
+
+/* comment2 */
+"elase_title2" = "Elase by the Finger";
+
+/* Undo */
+"elase_title3" = "Undo";
+
+/* comment3 */
+"save_title1" = "Do you save the picture of the Chalk Board?";
+
+/* comment4 */
+"save_title2" = "Cancel";
+
+/* comment5 */
+"save_title3" = "Save";
+
+/* comment6 */
+"save_title4" = "Save the data";
+
+/* comment7 */
+"save_title5" = "The picture save in the album.";
+
+/* comment8 */
+"save_title6" = "Connection failure";
+
+/* comment9 */
+"save_title7" = "After of passing for a while, try to connect it.";
+
+/* userID */
+"Twitter_title1" = "TwitterID";
+
+/* Password */
+"Twitter_title2" = "Password";
+
+/* Message */
+"Twitter_title3" = "Message(Optional)";
+
+/* send */
+"Twitter_title4" = "Send TwitPic!";
