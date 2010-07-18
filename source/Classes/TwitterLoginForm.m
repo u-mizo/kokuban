@@ -7,14 +7,11 @@
 //
 
 #import "TwitterLoginForm.h"
-//#import "XAuthTwitterEngine.h"
-//#import "UIAlertView+Helper.h"
 #import "ASIFormDataRequest.h"
 #import "XPathQuery.h"
 
 @implementation TwitterLoginForm
 
-//@synthesize twitterEngine;
 @synthesize setview;
 @synthesize delegate;
 
@@ -40,16 +37,16 @@
 	NSString *string3 = NSLocalizedString(@"Twitter_title3",@"Message");
 	NSString *string4 = NSLocalizedString(@"Twitter_title4",@"send");
 	
-	UIImage *backImage		= [UIImage imageNamed:@"twitter_back.jpg"];
-	UIImageView *back		= [[[UIImageView alloc] initWithImage:backImage] autorelease];
+	UIImage *backImage	= [UIImage imageNamed:@"twitter_back.jpg"];
+	UIImageView *back	= [[[UIImageView alloc] initWithImage:backImage] autorelease];
 	
-	userName				= [[[UITextField alloc] init] autorelease];
+	userName			= [[[UITextField alloc] init] autorelease];
 	userName.frame			= CGRectMake(10, 20, 200, 30);
-	userName.borderStyle	= UITextBorderStyleRoundedRect;
-	userName.keyboardType	= UIKeyboardTypeASCIICapable;
+	userName.borderStyle		= UITextBorderStyleRoundedRect;
+	userName.keyboardType		= UIKeyboardTypeASCIICapable;
 	userName.autocapitalizationType = UITextAutocapitalizationTypeNone;
-	userName.autocorrectionType = UITextAutocorrectionTypeNo;
-	userName.returnKeyType	= UIReturnKeyNext;
+	userName.autocorrectionType	= UITextAutocorrectionTypeNo;
+	userName.returnKeyType		= UIReturnKeyNext;
 	userName.tag			= 1;
 	
 	NSString *userID = [[NSUserDefaults standardUserDefaults] stringForKey:@"userID"];
@@ -60,12 +57,12 @@
 	}
 	[userName setDelegate:self];
 	
-	userPass				= [[[UITextField alloc] init] autorelease];
-	userPass.frame			= CGRectMake(10, 60, 200, 30);
+	userPass		= [[[UITextField alloc] init] autorelease];
+	userPass.frame		= CGRectMake(10, 60, 200, 30);
 	userPass.borderStyle	= UITextBorderStyleRoundedRect;
 	userPass.secureTextEntry= YES;
 	userPass.returnKeyType	= UIReturnKeyNext;
-	userPass.tag			= 2;
+	userPass.tag		= 2;
 	
 	NSString *pass = [[NSUserDefaults standardUserDefaults] stringForKey:@"pass"];
 	if(pass.length>0){
@@ -75,18 +72,18 @@
 	}
 	[userPass setDelegate:self];
 
-	message					= [[[UITextField alloc] init] autorelease];
-	message.frame			= CGRectMake(10, 100, 200, 30);
-	message.borderStyle		= UITextBorderStyleRoundedRect;
+	message			= [[[UITextField alloc] init] autorelease];
+	message.frame		= CGRectMake(10, 100, 200, 30);
+	message.borderStyle	= UITextBorderStyleRoundedRect;
 	message.keyboardType	= UIKeyboardTypeASCIICapable;
-	message.placeholder		= string3;
+	message.placeholder	= string3;
 	message.returnKeyType	= UIReturnKeyNext;
-	message.tag				= 3;
+	message.tag		= 3;
 	[message setDelegate:self];
 	
-	sendLogin				= [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	sendLogin		= [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	[sendLogin setTitle:string4 forState:UIControlStateNormal];
-	sendLogin.frame			= CGRectMake(10, 140, 200, 40);
+	sendLogin.frame		= CGRectMake(10, 140, 200, 40);
 	[sendLogin addTarget:self action:@selector(asyncUploadPhoto:) forControlEvents:UIControlEventTouchUpInside];
 	
 	[self.view addSubview:back];
@@ -168,7 +165,7 @@
 	//NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     
     NSURL *url = [NSURL URLWithString:@"http://twitpic.com/api/uploadAndPost"];//http://conol.jp/test/test.php
-    ASIFormDataRequest *request = [[ASIFormDataRequest alloc] initWithURL:url];
+    ASIFormDataRequest *request	= [[ASIFormDataRequest alloc] initWithURL:url];
     
     NSData* twitpicImage	= UIImagePNGRepresentation(setview);
 	
