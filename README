@@ -1,5 +1,9 @@
 "CHALK_BOARD" is iPad simple draw App. japanese is "kokuban".
 
+use Library:
+*ASIHTTP
+*XPathQuery
+
 App page:
 http://conol.jp/apps/kokuban/
 
