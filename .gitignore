@@ -1,0 +1,7 @@
+*~
+*.DS_Store
+/source/kokuban.xcodeproj/*.mode1v3
+/source/kokuban.xcodeproj/*.pbxuser
+/source/kokuban.xcodeproj/*.perspectivev3
+/source/
+
