@@ -262,7 +262,7 @@
 	[ivc setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
 	[self presentModalViewController:ivc animated:YES];
 	[ivc release];
-}å
+}
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
